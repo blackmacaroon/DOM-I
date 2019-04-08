@@ -61,17 +61,37 @@ headdy.textContent = siteContent["cta"]["h1"];
 const headdyButt = document.querySelector("button");
 headdyButt.textContent = siteContent["cta"]["button"];
 
-const midHead = document.querySelectorAll("h4");
-midHead[0].textContent = siteContent["main-content"]["features-h4"];
-midHead[1].textContent = siteContent["main-content"]["about-h4"];
-midHead[2].textContent = siteContent["main-content"]["services-h4"];
-midHead[3].textContent = siteContent["main-content"]["product-h4"];
-midHead[4].textContent = siteContent["main-content"]["vision-h4"];
+const heady = document.querySelectorAll("h4");
+heady[0].textContent = siteContent["main-content"]["features-h4"];
+heady[1].textContent = siteContent["main-content"]["about-h4"];
+heady[2].textContent = siteContent["main-content"]["services-h4"];
+heady[3].textContent = siteContent["main-content"]["product-h4"];
+heady[4].textContent = siteContent["main-content"]["vision-h4"];
+heady[5].textContent = siteContent["contact"]["contact-h4"];
 
-const midPara = document.querySelectorAll("p");
-midPara[0].textContent = siteContent["main-content"]["features-content"];
-midPara[1].textContent = siteContent["main-content"]["about-content"];
-midPara[2].textContent = siteContent["main-content"]["services-content"];
-midPara[3].textContent = siteContent["main-content"]["product-content"];
-midPara[4].textContent = siteContent["main-content"]["vision-content"];
+const para = document.querySelectorAll("p");
+para[0].textContent = siteContent["main-content"]["features-content"];
+para[1].textContent = siteContent["main-content"]["about-content"];
+para[2].textContent = siteContent["main-content"]["services-content"];
+para[3].textContent = siteContent["main-content"]["product-content"];
+para[4].textContent = siteContent["main-content"]["vision-content"];
+para[5].textContent = siteContent["contact"]["address"];
+para[6].textContent = siteContent["contact"]["phone"];
+para[7].textContent = siteContent["contact"]["email"];
+para[8].textContent = siteContent["footer"]["copyright"];
 
+
+navLink.forEach(item => item.style.color = "green");
+
+const navy = document.querySelector('nav');
+const preA = document.createElement("a");
+const postA = document.createElement("a");
+
+navy.append(preA);
+navy.prepend(postA);
+
+preA.textContent = "More Butts";
+postA.textContent = "Butts";
+
+preA.style.color = "green";
+postA.style.color = "green";
