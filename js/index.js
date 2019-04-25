@@ -38,5 +38,60 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+let  logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const navLink = document.querySelectorAll("a");
+navLink[0].textContent = siteContent["nav"]["nav-item-1"];
+navLink[1].textContent = siteContent["nav"]["nav-item-2"];
+navLink[2].textContent = siteContent["nav"]["nav-item-3"];
+navLink[3].textContent = siteContent["nav"]["nav-item-4"];
+navLink[4].textContent = siteContent["nav"]["nav-item-5"];
+navLink[5].textContent = siteContent["nav"]["nav-item-6"];
+
+const headdy = document.querySelector("h1");
+headdy.textContent = siteContent["cta"]["h1"];
+
+const headdyButt = document.querySelector("button");
+headdyButt.textContent = siteContent["cta"]["button"];
+
+const heady = document.querySelectorAll("h4");
+heady[0].textContent = siteContent["main-content"]["features-h4"];
+heady[1].textContent = siteContent["main-content"]["about-h4"];
+heady[2].textContent = siteContent["main-content"]["services-h4"];
+heady[3].textContent = siteContent["main-content"]["product-h4"];
+heady[4].textContent = siteContent["main-content"]["vision-h4"];
+heady[5].textContent = siteContent["contact"]["contact-h4"];
+
+const para = document.querySelectorAll("p");
+para[0].textContent = siteContent["main-content"]["features-content"];
+para[1].textContent = siteContent["main-content"]["about-content"];
+para[2].textContent = siteContent["main-content"]["services-content"];
+para[3].textContent = siteContent["main-content"]["product-content"];
+para[4].textContent = siteContent["main-content"]["vision-content"];
+para[5].textContent = siteContent["contact"]["address"];
+para[6].textContent = siteContent["contact"]["phone"];
+para[7].textContent = siteContent["contact"]["email"];
+para[8].textContent = siteContent["footer"]["copyright"];
+
+
+navLink.forEach(item => item.style.color = "green");
+
+const navy = document.querySelector('nav');
+const preA = document.createElement("a");
+const postA = document.createElement("a");
+
+navy.append(preA);
+navy.prepend(postA);
+
+preA.textContent = "More Butts";
+postA.textContent = "Butts";
+
+preA.style.color = "green";
+postA.style.color = "green";
